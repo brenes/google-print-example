@@ -1,0 +1,5 @@
+<ul>
+<% @printers.each do |printer| %>
+  <li><%= link_to printer.name, printer_path(printer.id) %>: <%= printer.description %></li>
+<% end -%>
+</ul>
