@@ -4,4 +4,8 @@ class PrintersController < ApplicationController
     @printers = @google_client.printers.all
   end
 
+  def show
+    @printer = @google_client.printers.find(params[:id])
+  end
+
 end
