@@ -1,0 +1,8 @@
+<h1><%= @printer.name %></h1>
+
+<p><%= @printer.description %></p>
+
+<%= form_tag printer_print_jobs_path(@printer.id) do %>
+  <%= text_area_tag :content %>
+  <%= submit_tag %>
+<% end -%>
